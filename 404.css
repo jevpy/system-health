@@ -1,0 +1,128 @@
+/* ********** Custom Properties ********** */
+:root {
+  /* --main-color: #43c9f2ff; */
+  /* --main-color: #59d7ffff; */
+  /* --main-color: #0ef6fdff; */
+  /* primer color - #0082c6ff */
+  /* primer color - #006bafff */
+  /* segundo color - #34b8e9ff */
+
+  --main-color: #0156A6;
+  /* --main-color: #0082c6ff; */
+  --second-main-color: #34b8e9ff;
+  --delete-color: #a64646ff;
+  --edit-color: #448524ff;
+  --max-width: 1200px;
+  --header-height: 5rem;
+  --font: "Roboto", sans-serif;
+  --bg-main-color: #050b17ff;
+  --link-hover: #99fada;
+  --light: #fff;
+  --font-color: #cececeff;
+  /* --font: "Raleway", sans-serif; */
+}
+
+/* ********** Reset ********** */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+h2{
+  font-size: 1.5rem;                                    
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.25rem;
+}
+
+/* ********** Components ********** */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+
+
+/* ********** Site Styles ********** */
+
+/* ********** 404 ********** */
+.error-404 img {
+  padding-top: 18%;
+  height: 100%;
+}
+
+.error-404 h1,
+.error-404 p,
+.error-404 h2 {
+  text-align: center;
+  color: var(--main-color);
+}
+
+.error-404 h1 {
+  margin-top: -3rem;
+  font-size: 10vw;
+}
+
+.error-404 h2 {
+  margin-top: -3rem;
+  font-size: 4vw;
+}
+@media screen and (min-width: 48em) {
+  .error-404 img {
+    display: block;
+    padding: 0;
+    width: 30rem;
+    margin: -2rem auto 0;
+  }
+
+  .error-404 h1 {
+    margin-top: -5rem;
+    font-size: 7vw;
+  }
+  .error-404 h1 {
+    margin-top: -5rem;
+    font-size: 2vw;
+  }
+
+  .error-404 p{
+    font-size: 2rem;
+  }
+}
